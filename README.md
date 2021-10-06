@@ -1,11 +1,11 @@
 # LeagueScoresWebsite
-The current aim of the project is to make a bowling league tracking website where you can see what your scores are and where you played. 
-In the future I hope to be able to expand different game rules like Nine Tap and other versions of bowling.
+The current aim of this project is to make a bowling league tracking website where one can create an account and view tournament scores as entered and managed by an administrator. 
+Future expansions may include different game rules like Nine Tap and other bowling rulesets including customizable league rule settings.
 ### The site will include:
-* login system
-* roles
-* leader boards for past tournments
-* and more
+* User authenication
+* Administrative roles and permissions
+* leader boards for active and historical tournaments
+* more features TBD
 
 # Team
 Tinet0624 and timothyfox443
