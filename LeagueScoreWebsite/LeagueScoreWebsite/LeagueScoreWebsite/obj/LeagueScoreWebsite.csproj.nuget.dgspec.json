@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\youse\\Documents\\.Net\\LeagueScoresWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite.csproj": {}
+    "C:\\Users\\youse\\Documents\\.Net\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\youse\\Documents\\.Net\\LeagueScoresWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite.csproj": {
+    "C:\\Users\\youse\\Documents\\.Net\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\youse\\Documents\\.Net\\LeagueScoresWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite.csproj",
+        "projectUniqueName": "C:\\Users\\youse\\Documents\\.Net\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite.csproj",
         "projectName": "LeagueScoreWebsite",
-        "projectPath": "C:\\Users\\youse\\Documents\\.Net\\LeagueScoresWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite.csproj",
+        "projectPath": "C:\\Users\\youse\\Documents\\.Net\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite.csproj",
         "packagesPath": "C:\\Users\\youse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\youse\\Documents\\.Net\\LeagueScoresWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\obj\\",
+        "outputPath": "C:\\Users\\youse\\Documents\\.Net\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\LeagueScoreWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\youse\\AppData\\Roaming\\NuGet\\NuGet.Config",
