@@ -32,7 +32,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     // User settings.
     options.User.AllowedUserNameCharacters =
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!-._@+";
-    options.User.RequireUniqueEmail = true;  //at some point we need to figure out unique identifier  HEY CHECK THIS OUT!!!
+    options.User.RequireUniqueEmail = true;
 
 });
 
