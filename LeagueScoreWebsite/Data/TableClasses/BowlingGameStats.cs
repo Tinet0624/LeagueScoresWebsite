@@ -1,4 +1,4 @@
-﻿namespace LeagueScoreWebsite.Data.TableClasses
+﻿namespace LeagueScoreWebsite
 {
     public class BowlingGameStats
     {
