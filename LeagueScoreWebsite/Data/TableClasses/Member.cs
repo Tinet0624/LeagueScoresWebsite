@@ -8,7 +8,7 @@
 
         public string LName { get; set; }
 
-        public DateOnly DateOfBirth { get; set; } //yy, mm, dd
+        public DateOnly DateOfBirth { get; set; } //yy, mm, dd              <---look here for datetime issues
 
         public bool IsAdmin { get; set; }
 
