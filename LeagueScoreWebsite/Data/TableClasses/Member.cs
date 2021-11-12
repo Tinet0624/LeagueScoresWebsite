@@ -7,7 +7,7 @@ namespace LeagueScoreWebsite
     public class Member
     {   [Key]
         [ForeignKey(nameof(Id))]
-        public int MemberId { get; set; } //this is linked to Identity ID field somehow this was done
+        public int MemberId { get; set; }
 
         public string FName { get; set; }
 
@@ -19,11 +19,7 @@ namespace LeagueScoreWebsite
 
         public IdentityUser Id { get; set; }
 
-        //public List<BowlingSquad> BowlingSquads { get; set; }
-
-        //this is linked to Rolls?
-
-
+        public List<BowlingSquad> BowlingSquads { get; set; }
 
     }
 }
