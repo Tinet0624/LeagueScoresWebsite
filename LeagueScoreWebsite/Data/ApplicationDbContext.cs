@@ -8,6 +8,16 @@ namespace LeagueScoreWebsite.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+        
         }
+
+        public DbSet<Member> Members { get; set; }
+
+        public DbSet<BowlingTournamentStat> BowlingTournamentStats { get; set; }
+
+        public DbSet<BowlingSquad> BowlingSquads { get; set; }
+
+        public DbSet<BowlingGameStat> BowlingGameStats { get; set; }
+
     }
 }

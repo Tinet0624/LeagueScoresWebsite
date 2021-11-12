@@ -1,7 +1,10 @@
-﻿namespace LeagueScoreWebsite
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LeagueScoreWebsite
 {
     public class BowlingSquad
     {
+        [Key]
         public int BowlingSquadId { get; set; }
 
         public List<Member> Members { get; set; }
