@@ -6,7 +6,7 @@
 
         public List<Member> Members { get; set; }
 
-        public List<BowlingTournamentStats> BowlingTournamentStats { get; set; }
+        public List<BowlingTournamentStat> BowlingTournamentStats { get; set; }
 
 
 
