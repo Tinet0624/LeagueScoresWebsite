@@ -1,8 +1,11 @@
-﻿namespace LeagueScoreWebsite
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LeagueScoreWebsite
 {
     public class BowlingTournamentStat
     {
-        public int BowlingTournamemtStatsId { get; set; }
+        [Key]
+        public int BowlingTournamemtStatId { get; set; }
 
         public bool IsNineTap { get; set; }
 
