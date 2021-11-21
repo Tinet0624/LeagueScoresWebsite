@@ -7,7 +7,7 @@ namespace LeagueScoreWebsite
     public class Member
     {   [Key]
         [ForeignKey(nameof(Id))]
-        public String MemberId { get; set; }
+        public string MemberId { get; set; } // shows as a list of members
 
         public string FName { get; set; }
 
@@ -20,6 +20,8 @@ namespace LeagueScoreWebsite
         public IdentityUser Id { get; set; }
 
         public List<BowlingSquad> BowlingSquads { get; set; }
-
     }
+
+    // GetAllAvailableBowlingSquads()
+    // Return a list of bowling squads with less than 4 members.
 }
