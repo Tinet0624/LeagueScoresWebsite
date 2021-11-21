@@ -6,7 +6,7 @@ namespace LeagueScoreWebsite
 {
     public class Member
     {   [Key]
-        [ForeignKey(nameof(Id))]
+        [ForeignKey(nameof(Id))]    //this is not linking to aspnetusers like it should or its not updating when the row has been created
         public String MemberId { get; set; }
 
         public string FName { get; set; }
