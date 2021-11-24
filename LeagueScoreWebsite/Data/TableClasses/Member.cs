@@ -14,6 +14,8 @@ namespace LeagueScoreWebsite
 
         public string LName { get; set; }
 
+
+        // Add as part of reg page
         public DateTime DateOfBirth { get; set; } //yyyy, mm, dd              <---look here for datetime issues
 
         //public bool IsAdmin { get; set; } // can use role for this property...

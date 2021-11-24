@@ -99,6 +99,7 @@ namespace LeagueScoreWebsite.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
         }
 
+        // After registered succesfully Create member entry.
 
         public async Task OnGetAsync(string returnUrl = null)
         {

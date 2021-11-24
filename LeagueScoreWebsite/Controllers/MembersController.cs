@@ -48,7 +48,7 @@ namespace LeagueScoreWebsite.Controllers
         // GET: Members/Create
         public IActionResult Create()
         {
-            ViewData["MemberId"] = new SelectList(_context.Users, "Id", "Id");
+            //ViewData["MemberId"] = new SelectList(_context.Users, "Id", "Id");
             return View();
         }
 
