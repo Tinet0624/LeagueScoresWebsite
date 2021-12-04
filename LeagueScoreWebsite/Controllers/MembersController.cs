@@ -118,7 +118,7 @@ namespace LeagueScoreWebsite.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MemberId"] = new SelectList(_context.Users, "Id", "Id", member.MemberId);
+            //ViewData["MemberId"] = new SelectList(_context.Users, "Id", "Id", member.MemberId);
             return View(member);
         }
 
