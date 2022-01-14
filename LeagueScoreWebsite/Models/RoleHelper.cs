@@ -35,7 +35,7 @@ namespace LeagueScoreWebsite.Models
                 var defaultUser = new IdentityUser()
                 {
                     Email = "admin@leaguescoresite.com",
-                    // UserName = "Admin"
+                    UserName = "Admin"
                 };
 
                 await userManager.CreateAsync(defaultUser, "thisisTHEadminPassw0rd!");
