@@ -10,7 +10,7 @@ namespace LeagueScoreWebsite.Models
     public static class RoleHelper
     {
         public const string Admin = "Admin";
-        public const string Member = "Member";
+        public const string SquadLeader = "SquadLeader";
         public static async Task CreateRoles(IServiceProvider provider, params string[] roles)
         {
             RoleManager<IdentityRole> roleManager = provider.GetService<RoleManager<IdentityRole>>();
