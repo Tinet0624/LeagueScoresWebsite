@@ -11,6 +11,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+
+// Adding roles to identity
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -67,6 +69,9 @@ app.MapRazorPages();
 
 IServiceScope serviceProvider = app.Services.GetRequiredService<IServiceProvider>().CreateScope();
 // Create default roles
-await RoleHelper.CreateRoles(serviceProvider.ServiceProvider, RoleHelper.Admin, RoleHelper.Member);
+await RoleHelper.CreateRoles(serviceProvider.ServiceProvider, RoleHelper.Admin, RoleHelper.SquadLeader);
+
+// create default admin
+await RoleHelper.CreateDefaultUser(serviceProvider.ServiceProvider, RoleHelper.Admin);
 
 app.Run();

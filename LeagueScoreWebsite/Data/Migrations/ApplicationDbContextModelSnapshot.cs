@@ -34,7 +34,7 @@ namespace LeagueScoreWebsite.Data.Migrations
 
                     b.HasIndex("MembersMemberId");
 
-                    b.ToTable("BowlingSquadMember");
+                    b.ToTable("BowlingSquadMember", (string)null);
                 });
 
             modelBuilder.Entity("LeagueScoreWebsite.BowlingGameStat", b =>
@@ -63,7 +63,7 @@ namespace LeagueScoreWebsite.Data.Migrations
 
                     b.HasIndex("MemberId");
 
-                    b.ToTable("BowlingGameStats");
+                    b.ToTable("BowlingGameStats", (string)null);
                 });
 
             modelBuilder.Entity("LeagueScoreWebsite.BowlingSquad", b =>
@@ -80,7 +80,7 @@ namespace LeagueScoreWebsite.Data.Migrations
 
                     b.HasKey("BowlingSquadId");
 
-                    b.ToTable("BowlingSquads");
+                    b.ToTable("BowlingSquads", (string)null);
                 });
 
             modelBuilder.Entity("LeagueScoreWebsite.BowlingTournamentStat", b =>
@@ -105,7 +105,7 @@ namespace LeagueScoreWebsite.Data.Migrations
 
                     b.HasIndex("BowlingSquadId");
 
-                    b.ToTable("BowlingTournamentStats");
+                    b.ToTable("BowlingTournamentStats", (string)null);
                 });
 
             modelBuilder.Entity("LeagueScoreWebsite.Member", b =>
@@ -126,7 +126,7 @@ namespace LeagueScoreWebsite.Data.Migrations
 
                     b.HasKey("MemberId");
 
-                    b.ToTable("Members");
+                    b.ToTable("Members", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
