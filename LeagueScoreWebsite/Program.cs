@@ -1,3 +1,4 @@
+using IdentityLogin.Models;
 using LeagueScoreWebsite.Data;
 using LeagueScoreWebsite.Models;
 using Microsoft.AspNetCore.Identity;
@@ -11,6 +12,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+// email provider
+builder.Services.AddTransient<IEmailProvider, EmailProviderSendGrid>();
 
 // Adding roles to identity
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
