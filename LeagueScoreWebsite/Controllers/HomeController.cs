@@ -21,9 +21,8 @@ namespace LeagueScoreWebsite.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Privacy()
+        public IActionResult Privacy()
         {
-            await _emailProvider.SendEmailAsync(null, null, null, null, null);  // these nulls should be populated with live data for rollout
             return View();
         }
 
@@ -31,6 +30,20 @@ namespace LeagueScoreWebsite.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ContactUs(ContactUsModel contactUsModel)
+        {
+            if (ModelState.IsValid) { 
+                await _emailProvider.SendEmailAsync(contactUsModel.toEmail, null, contactUsModel.subject, contactUsModel.content, contactUsModel.name);
+            } 
+            return View();
         }
     }
 }
