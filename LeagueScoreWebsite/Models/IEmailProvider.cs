@@ -6,7 +6,7 @@ namespace IdentityLogin.Models
     public interface IEmailProvider
     {
         Task SendEmailAsync(string toEmail, string fromEmail,
-            string subject, string content, string htmlContent);
+            string subject, string content, string name);
     }
 
     public class EmailProviderSendGrid : IEmailProvider
@@ -16,20 +16,20 @@ namespace IdentityLogin.Models
         {
             _config = config;
         }
-        public async Task SendEmailAsync(string toEmail, string fromEmail, string subject, string content, string htmlContent)
+        public async Task SendEmailAsync(string toEmail, string fromEmail, string subject, string content, string name)
         {
-            var apiKey = _config.GetSection("LeagueScore").Value;
+            var apiKey = _config.GetSection("LeagueApiKey").Value;
+            var coEmail = _config.GetSection("coEmail").Value; // fromEmail
             var client = new SendGridClient(apiKey);
             var msg = new SendGridMessage()
             {
-                From = new EmailAddress("t.fox.bsns@gmail.com", "Me"),  // This MUST be changed for live rollout
-                Subject = "Test Email for Send Grid",
-                PlainTextContent = "hope it worked",
-                HtmlContent = "<strong>trying it for the first time</strong>"
+                From = new EmailAddress(coEmail, "League Team"),
+                Subject = subject,
+                PlainTextContent = "From: "  + name + " at email: " + toEmail + ",\n\n" + content,
             };
-            msg.AddTo(new EmailAddress("t.fox.bsns@gmail.com", "Not the Fox"));  // This MUST be changed for live rollout
-            //var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
-            await client.SendEmailAsync(msg);
+            msg.AddTo(new EmailAddress(coEmail, "League Team"));
+            var response = await client.SendEmailAsync(msg); // see if the email is going through
+       
         }
     }
 }
