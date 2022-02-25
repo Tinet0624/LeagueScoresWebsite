@@ -9,23 +9,22 @@
 
     <form asp-action="ContactUs" method="post">
         <div class="form-group">
-            <label asp-for="name" class="control-label"></label>
-            <input asp-for="name" class="form-control" />
+            <input asp-for="name" class="form-control" placeholder="Name"/>
             <span asp-validation-for="name" class="text-danger"></span>
         </div>
+        <br />
         <div class="form-group">
-            <label asp-for="toEmail" class="control-label"></label>
-            <input asp-for="toEmail" class="form-control" />
+            <input asp-for="toEmail" class="form-control" placeholder="Email"/>
             <span asp-validation-for="toEmail" class="text-danger"></span>
         </div>
+        <br />
         <div class="mb-3">
-            <label asp-for="subject" class="control-label"></label>
-            <input asp-for="subject" class="form-control" />
+            <input asp-for="subject" class="form-control" placeholder="Subject"/>
             <span asp-validation-for="subject" class="text-danger"></span>
         </div>
+        <br />
         <div class="mb-3">
-            <label asp-for="content" class="control-label"></label>
-            <textarea asp-for="content" class="form-control"></textarea>
+            <textarea asp-for="content" class="form-control" rows="10" placeholder="Tell us whats going on." ></textarea>
             <span asp-validation-for="content" class="text-danger"></span>
         </div>
         <button type="submit" class="btn btn-primary">Send</button>
