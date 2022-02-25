@@ -17,3 +17,4 @@ This project is aiming to track the scores for a bowling league.
 * [.Net 6](https://visualstudio.microsoft.com/vs/preview/)
 * [Visual Studio 2022](https://dotnet.microsoft.com/download/dotnet/6.0)
 * [Identity 6](https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.0-preview.2.21154.6)
+* [SendGrid](https://github.com/sendgrid/sendgrid-csharp/blob/main/README.md)
