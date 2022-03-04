@@ -110,6 +110,7 @@ namespace LeagueScoreWebsite.Areas.Identity.Pages.Account
             public string LName { get; set; }
 
             [Required]
+            [DataType(DataType.Date)]
             public DateTime DateOfBirth { get; set; }
         }
 
