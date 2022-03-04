@@ -104,12 +104,15 @@ namespace LeagueScoreWebsite.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
 
             [Required]
+            [Display(Name = "First Name")]
             public string FName { get; set; }
 
             [Required]
+            [Display(Name = "Last Name")]
             public string LName { get; set; }
 
             [Required]
+            [Display(Name = "Date of Birth")]
             [DataType(DataType.Date)]
             public DateTime DateOfBirth { get; set; }
         }
